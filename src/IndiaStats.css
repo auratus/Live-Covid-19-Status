@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#stats_india{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#live{
+    width: 100%;
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dot{
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    letter-spacing: 5.5px;
+}
+
+#liveText{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: zoom;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes zoom{
+    0%{transform: scale(1,1);}
+    50%{transform: scale(1.3,1.3);}
+    99%{transform:scale(1,1) ;}
+}
+
+/* .zoom{
+    transition-property: transform;
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
+}
+
+.zoom:hover{
+    transform:scale(1.5,1.5);
+} */

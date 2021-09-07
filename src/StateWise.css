@@ -1,0 +1,19 @@
+#StateWise{
+
+    margin-top: 5vmax;
+    margin-bottom: 5vmax;
+    width: 100%;
+    padding: 0 5px 0 5px;
+}
+
+#table_heading{
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#table_heading h2{
+    font-weight: 900;
+}

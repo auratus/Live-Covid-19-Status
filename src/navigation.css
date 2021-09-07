@@ -1,0 +1,320 @@
+
+/* navigation starts here */
+
+#navigation_child {
+    width: 100%;
+    height: 20vh;
+    background-color: #d1d5eb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #logo_div {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #rt_logo {
+  
+    width: 60%;
+    height: 80%;
+  }
+  
+  #nav_main {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #checkLabel {
+  
+    font-size: 5vmax;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #checkBox {
+    display: none;
+  }
+  
+  #drop_down {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #drop_down li {
+    list-style: none;
+  
+  }
+  
+  #drop_down a {
+    text-decoration: none;
+    font-size: 1.7vmax;
+    color: black;
+    font-weight: 900;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    z-index: -10;
+  }
+  
+  
+  
+  
+  #drop_down a:hover{
+    color: rgba(0,0,0,0.7);
+  }
+  
+  #main{
+    margin-top: 20vh;
+  }
+  
+  #close{
+    display: none;
+  }
+  /* 
+  #index{
+    position: relative;
+    z-index:0;
+  }
+  
+  #index::after{
+  content: "";
+  border-bottom: 2px solid black;
+  display: block;
+  width:0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition-property: width;
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+  transform-origin: center;
+  
+  }
+  
+  #index:hover::after{
+  width: 90%;
+  }
+  
+  
+  #services{
+    position: relative;
+    z-index:0;
+  }
+  
+  #services::after{
+  content: "";
+  border-bottom: 2px solid black;
+  display: block;
+  width:0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition-property: width;
+  transition-timing-function: linear;
+  transition-duration: 0.35s;
+  transform-origin: center;
+  
+  }
+  
+  #services:hover::after{
+  width: 90%;
+  }
+  
+  
+  #contactus{
+    position: relative;
+    z-index:0;
+  }
+  
+  #contactus::after{
+  content: "";
+  border-bottom: 2px solid black;
+  display: block;
+  width:0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition-property: width;
+  transition-timing-function: linear;
+  transition-duration: 0.4s;
+  transform-origin: center;
+  
+  }
+  
+  #contactus:hover::after{
+  width: 90%;
+  }
+  
+  #myprojects{
+    position: relative;
+     z-index:0;
+  }
+  
+  #myprojects::after{
+  content: "";
+  border-bottom: 2px solid black;
+  display: block;
+  width:0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition-property: width;
+  transition-timing-function: linear;
+  transition-duration: 0.35s;
+  transform-origin: center;
+  
+  }
+  
+  #myprojects:hover::after{
+  width: 90%;
+  } */
+  
+  
+  
+  
+  
+  
+  @media(max-width:1080px) {
+  
+  
+    #navigation_child {
+    height: 10vh;
+  
+  }
+  
+    #logo_div {
+    width: 70%;
+    height: 100%;
+  }
+  
+  #rt_logo {
+  
+    width: 80%;
+    height: 80%;
+  }
+  
+    #checkLabel {
+        display: flex;
+        color: rgb(47, 79, 79);
+    }
+  
+  
+    #drop_down {
+        width: 60vw;
+        height: 100vh;
+        /* margin-top:20vh; */
+        position: fixed;
+        top: 0;
+        left: 40vw;
+        transform: translateX(60vw);
+        background-color: #28282B;
+        z-index: 999;
+        transition-property: transform;
+        transition-timing-function: linear;
+        transition-duration: 0.3s;
+        display: block;
+  
+    }
+  
+    #index{
+        width: 100%;
+        transform: translateY(10vh);
+        border-bottom: 1px solid white;
+        text-align: center;
+        height: 4vmax;
+    }
+  
+    #index::after,#services::after, #contactus::after,#myprojects::after{
+        display: none;
+    }
+  
+    #services{
+        width: 100%;
+        transform: translateY(19vh);
+        border-bottom: 1px solid white;
+        text-align: center;
+        height: 4vmax;
+    }
+  
+    #contactus{
+        width: 100%;
+        transform: translateY(28vh);
+        border-bottom: 1px solid white;
+        text-align: center;
+        height: 4vmax;
+    }
+  
+    #myprojects{
+        width: 100%;
+        transform: translateY(37vh);
+        border-bottom: 1px solid white;
+        text-align: center;
+        height: 4vmax;
+    }
+  
+  
+    #checkBox:checked~#drop_down {
+        transform: translateX(0vw);
+    }
+  
+    #drop_down a{
+        color:white;
+        font-size: 2.6vmax;
+        letter-spacing: 1.8px;
+        color: grey;
+        font-weight: 900;
+        padding-bottom: 30px;
+        transition-property: color;
+        transition-timing-function: linear;
+        transition-duration: 0.2s;
+    }
+  
+   
+  
+    #drop_down a:visited{
+  color:rgb(100, 149, 237);
+    }
+    #drop_down a:hover{
+  color: darkgrey;
+    }
+  
+  
+  
+    
+  
+    #close{
+        width: 4vmax;
+    color: white;
+    font-size:2.5vmax;
+  display: block;
+  transform: translate(5.5vw,2.5vh);
+  transition-property: color;
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  }
+  #close:active{
+  color: lightskyblue;
+  }
+  
+  #close:hover{
+  color:rgb(100, 149, 237);
+  }
+  
+  }
+  
+  /* navigation ends here */
+  
